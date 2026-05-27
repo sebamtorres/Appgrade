@@ -525,70 +525,8 @@ body{font-family:'Open Sans',sans-serif;background:var(--bg);color:var(--t1);min
 </div>
 
 
-<!-- ════════════════════════════════════════════
-     FINANCIERO — v8: hidden
-════════════════════════════════════════════
-<div id="view-financiero" class="view">
-  <div class="ptitle"><span class="pt-name">Financiero</span><span class="pt-sub" id="ptitle-financiero">Todos los canales · Mayo 2025</span></div>
-  <div id="banner-financiero" class="ch-banner" style="display:none"></div>
-
-  <!-- Hero: neto cobrado + las deducciones -->
-  <div class="g4" style="margin-bottom:18px">
-    <div class="kpi kpi-brand-hero">
-      <div class="kl" style="color:rgba(217,56,120,.7)">💰 Neto cobrado</div>
-      <div class="kv" id="fv-neto" style="color:var(--t1)">$2.676.205</div>
-      <div class="ks">Lo que llegó efectivamente a tu cuenta</div>
-      <div class="bdg bm" id="fv-neto-b">↑ +12%</div>
-    </div>
-    <div class="kpi">
-      <div class="kl">📊 Venta bruta</div>
-      <div class="kv" id="fv-bruta">$2.625.400</div>
-      <div class="ks">Antes de cualquier deducción</div>
-    </div>
-    <div class="kpi">
-      <div class="kl">🎫 Ticket promedio</div>
-      <div class="kv" id="fv-tkt">$51.831</div>
-      <div class="bdg bg" id="fv-tkt-b">↑ +5%</div>
-    </div>
-    <div class="kpi">
-      <div class="kl">📐 Margen efectivo</div>
-      <div class="kv" id="fv-margen" style="color:var(--amber)">67.2%</div>
-      <div class="ks" id="fv-margen-s">Después de comisión y descuentos</div>
-    </div>
-  </div>
-
-  <!-- Deducciones + waterfall -->
-  <div class="g21" style="margin-bottom:14px">
-    <div class="card">
-      <div class="ct">De cada peso facturado…</div>
-      <div class="cs">¿A dónde fue y cuánto llegó a tu bolsillo?</div>
-      <table class="dtab">
-        <thead><tr><th>Concepto</th><th></th><th>Monto</th></tr></thead>
-        <tbody>
-          <tr><td>Venta bruta</td><td><span class="tag-s bb">Base</span></td><td id="dt-bruta">$2.625.400</td></tr>
-          <tr><td style="color:var(--red)">Comisión de la app</td><td><span class="tag-s br">↓</span></td><td style="color:var(--red)" id="dt-com">↓ $459.391</td></tr>
-          <tr><td style="color:var(--amber)">Descuentos y promos</td><td><span class="tag-s ba">↓</span></td><td style="color:var(--amber)" id="dt-pro">↓ $401.763</td></tr>
-          <tr><td style="color:var(--amber)">Compensaciones</td><td><span class="tag-s ba">↓</span></td><td style="color:var(--amber)" id="dt-cmp">↓ $73.020</td></tr>
-          <tr class="tot"><td colspan="2">Neto final</td><td style="color:var(--green)" id="dt-net">$2.676.205</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div style="display:flex;flex-direction:column;gap:10px">
-      <div class="kpi">
-        <div class="kl">✂ Comisión app</div>
-        <div class="kv" style="color:var(--red)" id="fv-com">$459.391</div>
-        <div class="ks" id="fv-com-pct">17.5% de la venta bruta</div>
-        <div class="bdg br">Lo que cobra la plataforma</div>
-      </div>
-      <div class="kpi">
-        <div class="kl">🏷 Descuentos / promos</div>
-        <div class="kv" style="color:var(--amber)" id="fv-pro">$401.763</div>
-        <div class="ks" id="fv-pro-pct">15.3% de la venta bruta</div>
-      </div>
-    </div>
-  </div>
-</div>
--->
+<!-- v9: view-financiero removed (nested comment bug) —
+     financiero content lives in v7/v8 if needed -->
 
 
 <!-- ════════════════════════════════════════════
@@ -600,9 +538,9 @@ body{font-family:'Open Sans',sans-serif;background:var(--bg);color:var(--t1);min
 
   <!-- KPIs de ventas -->
   <div class="g3" style="margin-bottom:18px">
-    <div class="kpi" style="background:linear-gradient(135deg,#1E0910,#1A0C07);border-color:rgba(217,56,120,.22)">
-      <div class="kl" style="color:rgba(217,56,120,.7)">📊 Venta bruta</div>
-      <div class="kv" id="com-bruta" style="color:var(--t1)">$2.625.400</div>
+    <div class="kpi kpi-brand-hero">
+      <div class="kl">📊 Venta bruta</div>
+      <div class="kv" id="com-bruta">$2.625.400</div>
       <div class="bdg bm" id="com-bruta-b">↑ +12%</div>
     </div>
     <div class="kpi">
@@ -846,9 +784,9 @@ body{font-family:'Open Sans',sans-serif;background:var(--bg);color:var(--t1);min
 
   <!-- KPIs de marketing -->
   <div class="g3" style="margin-bottom:18px">
-    <div class="kpi" style="background:linear-gradient(135deg,#1E0910,#1A0C07);border-color:rgba(217,56,120,.22)">
-      <div class="kl" style="color:rgba(217,56,120,.7)">⚡ Campañas activas</div>
-      <div class="kv lg" id="mkt-camp" style="color:var(--t1)">25</div>
+    <div class="kpi kpi-brand-hero">
+      <div class="kl">⚡ Campañas activas</div>
+      <div class="kv lg" id="mkt-camp">25</div>
       <div class="ks">Este mes en todos los canales</div>
       <div class="bdg bg">✓ Alta cobertura</div>
     </div>
@@ -1139,19 +1077,6 @@ function updateAll(){
   if(g('kv-neto-b')){g('kv-neto-b').textContent=tn.txt;g('kv-neto-b').className='bdg '+tnCls}
   renderBriefing(d);
 
-  /* financiero */
-  sv('fv-neto',f$(d.neto));sv('fv-bruta',f$(d.bruta));sv('fv-tkt',f$(d.tkt));
-  sv('fv-com',f$(d.com));sv('fv-pro',f$(d.pro));
-  sv('dt-bruta',f$(d.bruta));sv('dt-com','↓ '+f$(d.com));sv('dt-pro','↓ '+f$(d.pro));sv('dt-cmp','↓ '+f$(d.comp));sv('dt-net',f$(d.neto));
-  if(g('fv-com-pct'))g('fv-com-pct').textContent='↓ '+d.com_p+'% de la venta bruta';
-  if(g('fv-pro-pct'))g('fv-pro-pct').textContent='↓ '+d.pro_p+'% de la venta bruta';
-  /* margen efectivo */
-  const margen=(100-d.com_p-d.pro_p);
-  sv('fv-margen',margen.toFixed(1)+'%');
-  if(g('fv-margen'))g('fv-margen').style.color=margen>=75?'var(--green)':margen>=65?'var(--amber)':'var(--red)';
-  if(g('fv-margen-s'))g('fv-margen-s').textContent='Comisión '+d.com_p+'% + Desc. '+d.pro_p+'%';
-  /* trending badge financiero */
-  if(g('fv-neto-b')){g('fv-neto-b').textContent=tn.txt;g('fv-neto-b').className='bdg '+tnCls}
 
   /* comercial */
   sv('com-bruta',f$(d.bruta));sv('com-ped',d.ped);sv('com-tkt',f$(d.tkt));
